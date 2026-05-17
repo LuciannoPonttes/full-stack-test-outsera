@@ -1,0 +1,1 @@
+h2{margin-top:0;font-size:18px}.grid{display:grid;grid-template-columns:repeat(2,minmax(320px,1fr));gap:18px}.painel{background:white;border:1px solid #ddd;padding:12px}.painel h3{margin-top:0;font-size:15px}.painel h4{margin-bottom:6px;font-size:14px}.busca{display:flex;gap:4px;margin-bottom:10px}.busca input{flex:1}@media(max-width:900px){.grid{grid-template-columns:1fr}}

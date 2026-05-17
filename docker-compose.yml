@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: ./BACK-PiorFilme-OutSera/golden-raspberry-api
+      dockerfile: Dockerfile
+    container_name: golden-raspberry-api
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./FRONT-PiorFilme-OutSera/golden-raspberry-interface
+      dockerfile: Dockerfile
+    container_name: golden-raspberry-interface
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
